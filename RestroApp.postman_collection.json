@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "73a2b4c6-e616-4098-8f10-1e971709152a",
+		"name": "RestroApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/customer/register",
+			"protocolProfileBehavior": {
+				"strictSSL": true,
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"loginId\": \"testAniket\"\r\n   \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/customer/loginId?loginId=testAniket",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"loginId"
+					],
+					"query": [
+						{
+							"key": "loginId",
+							"value": "testAniket"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/customer/register",
+			"protocolProfileBehavior": {
+				"strictSSL": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"loginId\": \"testAniket\",\r\n    \"firstName\": \"Aniket\",\r\n    \"mobileNumber\" : \"1111111111\",\r\n    \"emailId\" : \"ani@gmail.com\",\r\n    \"password\": \"Password is required.\",\r\n    \"customerActiveStatus\": \"must not be blank\",\r\n    \"storeId\": \"must not be blank\",\r\n    \"restaurantId\": \"must not be blank\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/customer/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/customer/loginId?loginId=pashine",
+			"protocolProfileBehavior": {
+				"strictSSL": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/customer/loginId?loginId=pashine",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"loginId"
+					],
+					"query": [
+						{
+							"key": "loginId",
+							"value": "pashine"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/customer/update",
+			"protocolProfileBehavior": {
+				"strictSSL": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"loginId\": \"pashine\",\r\n    \"firstName\": \"Aniket P\",\r\n    \"mobileNumber\" : \"123456789\",\r\n    \"emailId\" : \"aniketp@gmail.com\",\r\n    \"password\": \"Password is required.\",\r\n    \"customerActiveStatus\": \"must not be blank\",\r\n    \"storeId\": \"must not be blank\",\r\n    \"restaurantId\": \"must not be blank\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/customer/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,1 @@
+The REST Endpoints with sample data is available in file : RestroApp.postman_collection.json
